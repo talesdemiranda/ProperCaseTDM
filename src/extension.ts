@@ -94,7 +94,15 @@ export function activate(context: vscode.ExtensionContext) {
 
 			//Quebra linha quando acabar
 			if (numeroLinha + 1 != textEditor.document.lineCount) {
-				linhaProper = linhaProper + "\r\n";
+				console.log("lastLine.text: " + lastLine.text)
+				console.log("linha: " + lastLine.text)
+				if (lastLine.text != linha) {
+					linhaProper = linhaProper + "\r\n";
+				}
+				else {
+					linhaProper = linhaProper;
+				}	
+				
 			}
 
 		}
