@@ -2,7 +2,7 @@
 	"name": "propercase",
 	"displayName": "ProperCaseTDM",
 	"description": "TDM Proper Case",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"publisher": "ProperCaseTDM",
 	"engines": {
 		"vscode": "^1.43.0"

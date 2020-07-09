@@ -97,7 +97,7 @@ export function activate(context: vscode.ExtensionContext) {
 			if (numeroLinha + 1 != textEditor.document.lineCount) {
 				console.log("lastLine.text: " + lastLine.text)
 				console.log("linha: " + lastLine.text)
-				if (numeroLinha + 1 != textEditor.document.lineCount) {
+				if (numeroLinha < sel.end.line) {
 					linhaProper = linhaProper + "\r\n";
 				}
 				else {
